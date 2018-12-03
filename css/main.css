@@ -1,0 +1,41 @@
+.container {
+    max-width: 90%;
+}
+
+.top-margin {
+    margin-top: 40px;
+}
+
+.bottom-margin {
+    margin-bottom: 40px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.roboto {
+    font-family: 'Roboto Slab', serif;
+}
+
+.kaushan {
+    font-family: 'Kaushan Script', cursive;
+}
+
+#form {
+    border-color: #f3f3f3;
+    border-style: solid;
+    padding: 40px 20px 20px 20px;
+    border-radius: 15px;
+}
+
+.benson {
+    transform: rotate(10deg);
+}
+
+/* Transform Text Form fields */
+/* Transform text form fields */
+#name,
+#friend-name {
+    text-transform: capitalize;
+}
