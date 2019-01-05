@@ -1,9 +1,9 @@
-$(document).ready(function() {
+$(document).ready(() => {
     //DOM is fully loaded
 
     // Capitalize the first letter of Name
-    $('#name').on('change', function (e) {
-        var $this = $(this),
+    $('#name').on('change', (e) => {
+        let $this = $(this),
             val = $this.val();
         regex = /\b[a-z]/g;
 
@@ -11,8 +11,8 @@ $(document).ready(function() {
     });
 
     // Capitalize the first letter of Friend's Name
-    $('#friend-name').on('change', function (e) {
-        var $this = $(this),
+    $('#friend-name').on('change', (e) => {
+        let $this = $(this),
             val = $this.val();
         regex = /\b[a-z]/g;
 
@@ -20,7 +20,7 @@ $(document).ready(function() {
     });
 
     //When form is submitted, grab data
-    $('form').submit(function (event) {
+    $('form').submit( (event) => {
                 event.preventDefault();
 
                 // Make the submit button load
@@ -28,22 +28,22 @@ $(document).ready(function() {
                 $('button').toggleClass('btn-primary');
                 $('button').html('Loading <span class="spinner"></span><i class="fa fa-spinner fa-spin"></i></span>');
 
-                // put form data into variables
-                var name = $.trim(document.getElementById('name').value);
-                var friendName = $.trim(document.getElementById('friendName').value);
-                var phone = $.trim(document.getElementById('phone').value);
+                // put form data into letiables
+                let name = $.trim(document.getElementById('name').value);
+                let friendName = $.trim(document.getElementById('friendName').value);
+                let phone = $.trim(document.getElementById('phone').value);
 
-                var postData = 'name=' + name + '&friendName=' + friendName + '&phone=' + phone;
+                let postData = `name=${name}&friendName=${friendName}&phone=${phone}`;
 
                 // Send the Data to the Processor for processing
                 $.ajax({
                     type: 'POST',
                     url: 'processor.php',
                     data: postData,
-                    success: function(result) {
+                    success: (result) => {
                         if(result == 'success') {
                             swal("Successfully Invited", "You friend has been invited to church", "success");
-                            setTimeout(function(){
+                            setTimeout(() => {
                                 window.location = 'https://stbensonimoh.com/votage/invite'
                             }, 3000);
                         }
