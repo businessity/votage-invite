@@ -44,7 +44,7 @@ $(document).ready(() => {
                         if(result == 'success') {
                             swal("Successfully Invited", "You friend has been invited to church", "success");
                             setTimeout(() => {
-                                window.location = 'https://stbensonimoh.com/votage/invite'
+                                window.location = 'https://votage.church/inviteafriend'
                             }, 3000);
                         }
                     }
