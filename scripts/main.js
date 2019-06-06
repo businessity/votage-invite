@@ -42,9 +42,9 @@ $(document).ready(() => {
                     data: postData,
                     success: (result) => {
                         if(result == 'success') {
-                            swal("Successfully Invited", "You friend has been invited to church", "success");
+                            swal("Successfully Invited", "You friend has been invited to the Ads Workshop", "success");
                             setTimeout(() => {
-                                window.location = 'https://votage.church/inviteafriend'
+                                window.location = 'https://businessitygroup.com/adsworkshop/invite-a-friend'
                             }, 3000);
                         }
                     }
