@@ -11,7 +11,7 @@ $phone = $_POST['phone'];
 // prepare the parameters
 $url = 'https://www.bulksmsnigeria.com/api/v1/sms/create';
 $from = $name;
-$body = "Hi " . $friendName . ", Indeed God doesn't send you to a church, He sends you to a man. So, this Sunday, I am inviting you to where love, joyful music and spiritual growth dwells. I love you, that's why I want to share special moments with you at the VOTAGE CHURCH Launch. Venue: Winlos Center, 144, Airport Road, beside INEC Office, Oko-Ogba, Benin City. Time: 8:30am. I'm expecting you.";
+$body = "Hi " . $friendName . ". Just so you know that I care about you, register for this workshop and thank me later. I just did mine. https://businessitygroup.com/ads-workshop";
 $myvars = 'api_token=' . $smstoken . '&from=' . $from . '&to=' . $phone . '&body=' . $body;
 //start CURL
 // create curl resource
